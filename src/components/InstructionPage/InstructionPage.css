@@ -1,0 +1,201 @@
+.instruction-container {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-title {
+    color: #0066FF;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+
+/* Dark mode styles */
+
+.app-container.dark-mode .instruction-container {
+    background-color: #1e1e1e;
+}
+
+.app-container.dark-mode .page-title {
+    color: #64b5f6;
+    /* A bright blue color that's visible in dark mode */
+}
+
+.app-container.dark-mode .instruction-text,
+.app-container.dark-mode .step-item,
+.app-container.dark-mode .final-text,
+.app-container.dark-mode .click-instruction {
+    color: #ffffff;
+}
+
+.app-container.dark-mode .ocr-link {
+    color: #64b5f6;
+}
+
+
+/* Complaint type descriptions should stay black in both modes */
+
+.complaint-type-description {
+    color: #333333 !important;
+}
+
+.disclaimer-box {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.disclaimer-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+/* Keep disclaimer text red in dark mode */
+
+.app-container.dark-mode .disclaimer-text {
+    color: #ff0000 !important;
+}
+
+.instruction-text {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.ocr-link {
+    color: #0066FF;
+    text-decoration: underline;
+}
+
+.ocr-link:hover {
+    text-decoration: none;
+}
+
+.steps-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.step-item {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.final-text {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 20px 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.click-instruction {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+/* Button container styles */
+
+.button-container,
+div[class*="button-container"],
+div[class*="button-group"] {
+    display: flex !important;
+    gap: 20px !important;
+    margin-top: 20px !important;
+    padding: 20px !important;
+    margin-left: 0 !important;
+    justify-content: flex-start !important;
+    border-top: 1px solid #ddd !important;
+}
+
+
+/* Universal button styles */
+
+button,
+.action-button,
+.cancel-button,
+.next-button,
+.complaint-type-button,
+.entity-info-button,
+button[type="button"],
+a.action-button,
+input[type="submit"],
+.MuiButton-root {
+    padding: 12px 30px !important;
+    font-size: 16px !important;
+    font-family: "Segoe UI", Arial, sans-serif !important;
+    background-color: #2196f3 !important;
+    color: #ffffff !important;
+    border: none !important;
+    cursor: pointer !important;
+    min-width: 120px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50px !important;
+    font-weight: 500 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    margin: 0 !important;
+    outline: none !important;
+    text-transform: none !important;
+}
+
+
+/* Hover styles */
+
+button:hover,
+.action-button:hover,
+.cancel-button:hover,
+.next-button:hover,
+.complaint-type-button:hover,
+.entity-info-button:hover,
+button[type="button"]:hover,
+a.action-button:hover,
+input[type="submit"]:hover,
+.MuiButton-root:hover {
+    background-color: #1976d2 !important;
+    opacity: 0.95 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* Dark mode styles */
+
+.app-container.dark-mode button,
+.app-container.dark-mode .action-button,
+.app-container.dark-mode .cancel-button,
+.app-container.dark-mode .next-button,
+.app-container.dark-mode .complaint-type-button,
+.app-container.dark-mode .entity-info-button,
+.app-container.dark-mode button[type="button"],
+.app-container.dark-mode a.action-button,
+.app-container.dark-mode input[type="submit"],
+.app-container.dark-mode .MuiButton-root {
+    background-color: #2196f3 !important;
+    color: #ffffff !important;
+}

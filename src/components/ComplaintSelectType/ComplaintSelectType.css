@@ -1,0 +1,360 @@
+.complaint-type-container {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.complaint-type-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.complaint-type-title {
+    color: #0066FF;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.complaint-type-description {
+    color: var(--text-secondary);
+    margin-left: 32px;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.complaint-type-option {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.complaint-type-option label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.complaint-type-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333 !important;
+    margin-top: 8px;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 0;
+    justify-content: flex-start;
+    border-top: 1px solid #ddd;
+}
+
+.action-button,
+.cancel-button,
+.complaint-type-button,
+button[type="button"],
+a.action-button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #2196f3 !important;
+    /* Bright blue background */
+    color: #ffffff !important;
+    border: none !important;
+    cursor: pointer;
+    min-width: 120px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Force specific button colors */
+
+.cancel-button,
+button[type="button"],
+.complaint-type-button,
+.next-button,
+.entity-info-button {
+    background-color: #2196f3 !important;
+    /* Bright blue */
+    color: #ffffff !important;
+}
+
+.action-button:hover,
+.cancel-button:hover,
+.complaint-type-button:hover,
+button[type="button"]:hover,
+.next-button:hover,
+.entity-info-button:hover {
+    background-color: #1976d2 !important;
+    /* Slightly darker blue on hover */
+    opacity: 0.95;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Dark mode - maintain blue color */
+
+.app-container.dark-mode .action-button,
+.app-container.dark-mode .cancel-button,
+.app-container.dark-mode button[type="button"],
+.app-container.dark-mode .complaint-type-button,
+.app-container.dark-mode .next-button,
+.app-container.dark-mode .entity-info-button {
+    background-color: #2196f3 !important;
+    color: #ffffff !important;
+}
+
+.MuiFormControl-root {
+    width: 100%;
+}
+
+.MuiRadio-root {
+    color: var(--accent-color) !important;
+}
+
+.MuiRadio-root.Mui-checked {
+    color: var(--accent-color) !important;
+}
+
+.MuiFormControlLabel-root {
+    margin-left: 0;
+}
+
+.MuiFormControlLabel-label {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.MuiFormHelperText-root {
+    font-size: 0.875rem;
+    margin-top: 8px;
+    color: #f44336;
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+
+/* Button container styles */
+
+.complaint-select-type-container .button-container,
+.complaint-select-type-container div[class*="button-container"],
+.complaint-select-type-container div[class*="button-group"],
+.complaint-select-type-container .MuiBox-root,
+.complaint-select-type-container .MuiGrid-root {
+    display: flex !important;
+    gap: 20px !important;
+    margin-top: 20px !important;
+    padding: 20px !important;
+    margin-left: 0 !important;
+    justify-content: flex-start !important;
+    border-top: 1px solid #ddd !important;
+}
+
+
+/* Remove all duplicate button styles and consolidate them */
+
+.complaint-select-type-container button,
+.complaint-select-type-container .action-button,
+.complaint-select-type-container .cancel-button,
+.complaint-select-type-container .next-button,
+.complaint-select-type-container .complaint-type-button,
+.complaint-select-type-container .entity-info-button,
+.complaint-select-type-container button[type="button"],
+.complaint-select-type-container a.action-button,
+.complaint-select-type-container input[type="submit"],
+.complaint-select-type-container .MuiButton-root,
+.complaint-select-type-container .MuiButtonBase-root,
+.complaint-select-type-container .MuiButton-contained,
+.complaint-select-type-container .MuiButton-containedPrimary,
+.complaint-select-type-container .MuiButton-containedSecondary,
+.complaint-select-type-container .MuiButton-outlined,
+.complaint-select-type-container .MuiButton-outlinedPrimary,
+.complaint-select-type-container .MuiButton-outlinedSecondary {
+    background-color: #2196f3 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 12px 30px !important;
+    height: 44px !important;
+    min-width: 120px !important;
+    cursor: pointer !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+}
+
+
+/* Hover effect for buttons */
+
+.complaint-select-type-container button:hover,
+.complaint-select-type-container .action-button:hover,
+.complaint-select-type-container .cancel-button:hover,
+.complaint-select-type-container .next-button:hover,
+.complaint-select-type-container .complaint-type-button:hover,
+.complaint-select-type-container .entity-info-button:hover,
+.complaint-select-type-container button[type="button"]:hover,
+.complaint-select-type-container a.action-button:hover,
+.complaint-select-type-container input[type="submit"]:hover,
+.complaint-select-type-container .MuiButton-root:hover,
+.complaint-select-type-container .MuiButtonBase-root:hover {
+    background-color: #1976d2 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* Button container styles */
+
+.button-container,
+div[class*="button-container"],
+div[class*="button-group"] {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 0;
+    justify-content: flex-start;
+    border-top: 1px solid #ddd;
+}
+
+
+/* Material-UI form styles - keep these unchanged */
+
+.MuiFormControl-root {
+    width: 100%;
+}
+
+.MuiRadio-root {
+    color: var(--accent-color) !important;
+}
+
+.MuiRadio-root.Mui-checked {
+    color: var(--accent-color) !important;
+}
+
+.MuiFormControlLabel-root {
+    margin-left: 0;
+}
+
+.MuiFormControlLabel-label {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.MuiFormHelperText-root {
+    font-size: 0.875rem;
+    margin-top: 8px;
+    color: #f44336;
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+
+/* Additional Material-UI specific overrides */
+
+.complaint-select-type-container .MuiButton-root .MuiButton-label,
+.complaint-select-type-container .MuiButtonBase-root .MuiButton-label {
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+}
+
+
+/* Override any Material-UI specific styles */
+
+.complaint-select-type-container .MuiButton-contained,
+.complaint-select-type-container .MuiButton-containedPrimary,
+.complaint-select-type-container .MuiButton-containedSecondary,
+.complaint-select-type-container .MuiButton-outlined,
+.complaint-select-type-container .MuiButton-outlinedPrimary,
+.complaint-select-type-container .MuiButton-outlinedSecondary {
+    background-color: #2196f3 !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+
+/* CMS Design System Button Overrides */
+
+.ds-c-button.ds-c-button--primary {
+    background-color: #2196f3 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 12px 30px !important;
+    height: 44px !important;
+    min-width: 120px !important;
+    cursor: pointer !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-family: "Segoe UI", Arial, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+}
+
+.ds-c-button.ds-c-button--primary:hover {
+    background-color: #1976d2 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+    opacity: 0.95 !important;
+    transform: translateY(-1px) !important;
+}
+
+.ds-c-button.ds-c-button--primary:disabled {
+    background-color: #cccccc !important;
+    cursor: not-allowed !important;
+    opacity: 0.7 !important;
+}
+
+
+/* Dark mode styles */
+
+.app-container.dark-mode .ds-c-button.ds-c-button--primary {
+    background-color: #2196f3 !important;
+    color: #ffffff !important;
+}
