@@ -358,3 +358,263 @@ div[class*="button-group"] {
     background-color: #2196f3 !important;
     color: #ffffff !important;
 }
+
+
+/* Responsive styles for small screens */
+
+@media screen and (max-width: 768px) {
+    .complaint-type-container {
+        padding: 16px;
+    }
+    .complaint-type-content {
+        padding: 16px;
+    }
+    .complaint-type-title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    .complaint-type-description {
+        margin-left: 24px;
+        font-size: 0.85rem;
+    }
+    .complaint-type-option {
+        margin-bottom: 16px;
+        padding: 12px;
+    }
+    .complaint-type-option label {
+        margin-bottom: 6px;
+        font-size: 14px;
+    }
+    .complaint-type-description {
+        font-size: 13px;
+    }
+    .button-container,
+    div[class*="button-container"],
+    div[class*="button-group"] {
+        gap: 16px;
+        margin-top: 16px;
+        padding: 16px;
+    }
+    .action-button,
+    .cancel-button,
+    .complaint-type-button,
+    button[type="button"],
+    a.action-button {
+        padding: 10px 20px;
+        font-size: 14px;
+        min-width: 100px;
+        height: 40px;
+    }
+    .complaint-select-type-container button,
+    .complaint-select-type-container .action-button,
+    .complaint-select-type-container .cancel-button,
+    .complaint-select-type-container .next-button,
+    .complaint-select-type-container .complaint-type-button,
+    .complaint-select-type-container .entity-info-button,
+    .complaint-select-type-container button[type="button"],
+    .complaint-select-type-container a.action-button,
+    .complaint-select-type-container input[type="submit"],
+    .complaint-select-type-container .MuiButton-root,
+    .complaint-select-type-container .MuiButtonBase-root,
+    .complaint-select-type-container .MuiButton-contained,
+    .complaint-select-type-container .MuiButton-containedPrimary,
+    .complaint-select-type-container .MuiButton-containedSecondary,
+    .complaint-select-type-container .MuiButton-outlined,
+    .complaint-select-type-container .MuiButton-outlinedPrimary,
+    .complaint-select-type-container .MuiButton-outlinedSecondary {
+        padding: 10px 20px !important;
+        height: 40px !important;
+        min-width: 100px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .complaint-type-container {
+        padding: 12px;
+    }
+    .complaint-type-content {
+        padding: 12px;
+    }
+    .complaint-type-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .complaint-type-description {
+        margin-left: 16px;
+        font-size: 0.8rem;
+    }
+    .complaint-type-option {
+        margin-bottom: 12px;
+        padding: 10px;
+    }
+    .complaint-type-option label {
+        margin-bottom: 4px;
+        font-size: 13px;
+    }
+    .complaint-type-description {
+        font-size: 12px;
+    }
+    .button-container,
+    div[class*="button-container"],
+    div[class*="button-group"] {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 12px;
+        padding: 12px;
+    }
+    .action-button,
+    .cancel-button,
+    .complaint-type-button,
+    button[type="button"],
+    a.action-button {
+        width: 100%;
+        padding: 8px 16px;
+        font-size: 13px;
+        min-width: 0;
+        height: 36px;
+    }
+    .complaint-select-type-container button,
+    .complaint-select-type-container .action-button,
+    .complaint-select-type-container .cancel-button,
+    .complaint-select-type-container .next-button,
+    .complaint-select-type-container .complaint-type-button,
+    .complaint-select-type-container .entity-info-button,
+    .complaint-select-type-container button[type="button"],
+    .complaint-select-type-container a.action-button,
+    .complaint-select-type-container input[type="submit"],
+    .complaint-select-type-container .MuiButton-root,
+    .complaint-select-type-container .MuiButtonBase-root,
+    .complaint-select-type-container .MuiButton-contained,
+    .complaint-select-type-container .MuiButton-containedPrimary,
+    .complaint-select-type-container .MuiButton-containedSecondary,
+    .complaint-select-type-container .MuiButton-outlined,
+    .complaint-select-type-container .MuiButton-outlinedPrimary,
+    .complaint-select-type-container .MuiButton-outlinedSecondary {
+        width: 100% !important;
+        padding: 8px 16px !important;
+        height: 36px !important;
+        min-width: 0 !important;
+    }
+}
+
+
+/* Media query for extra small devices */
+
+@media screen and (max-width: 360px) {
+    .complaint-type-container {
+        padding: 10px;
+    }
+    .complaint-type-content {
+        padding: 10px;
+    }
+    .complaint-type-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .complaint-type-description {
+        margin-left: 12px;
+        font-size: 0.75rem;
+    }
+    .complaint-type-option {
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+    .complaint-type-option label {
+        margin-bottom: 3px;
+        font-size: 12px;
+    }
+    .complaint-type-description {
+        font-size: 11px;
+    }
+    .button-container,
+    div[class*="button-container"],
+    div[class*="button-group"] {
+        gap: 10px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .action-button,
+    .cancel-button,
+    .complaint-type-button,
+    button[type="button"],
+    a.action-button {
+        padding: 6px 12px;
+        font-size: 12px;
+        height: 32px;
+    }
+    .complaint-select-type-container button,
+    .complaint-select-type-container .action-button,
+    .complaint-select-type-container .cancel-button,
+    .complaint-select-type-container .next-button,
+    .complaint-select-type-container .complaint-type-button,
+    .complaint-select-type-container .entity-info-button,
+    .complaint-select-type-container button[type="button"],
+    .complaint-select-type-container a.action-button,
+    .complaint-select-type-container input[type="submit"],
+    .complaint-select-type-container .MuiButton-root,
+    .complaint-select-type-container .MuiButtonBase-root,
+    .complaint-select-type-container .MuiButton-contained,
+    .complaint-select-type-container .MuiButton-containedPrimary,
+    .complaint-select-type-container .MuiButton-containedSecondary,
+    .complaint-select-type-container .MuiButton-outlined,
+    .complaint-select-type-container .MuiButton-outlinedPrimary,
+    .complaint-select-type-container .MuiButton-outlinedSecondary {
+        padding: 6px 12px !important;
+        height: 32px !important;
+    }
+}
+
+
+/* Media query for landscape orientation on small devices */
+
+@media screen and (max-height: 480px) and (orientation: landscape) {
+    .complaint-type-container {
+        padding: 10px;
+    }
+    .complaint-type-content {
+        padding: 10px;
+    }
+    .complaint-type-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .complaint-type-description {
+        margin-left: 16px;
+    }
+    .complaint-type-option {
+        margin-bottom: 8px;
+        padding: 8px;
+    }
+    .button-container,
+    div[class*="button-container"],
+    div[class*="button-group"] {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .action-button,
+    .cancel-button,
+    .complaint-type-button,
+    button[type="button"],
+    a.action-button {
+        height: 36px;
+    }
+    .complaint-select-type-container button,
+    .complaint-select-type-container .action-button,
+    .complaint-select-type-container .cancel-button,
+    .complaint-select-type-container .next-button,
+    .complaint-select-type-container .complaint-type-button,
+    .complaint-select-type-container .entity-info-button,
+    .complaint-select-type-container button[type="button"],
+    .complaint-select-type-container a.action-button,
+    .complaint-select-type-container input[type="submit"],
+    .complaint-select-type-container .MuiButton-root,
+    .complaint-select-type-container .MuiButtonBase-root,
+    .complaint-select-type-container .MuiButton-contained,
+    .complaint-select-type-container .MuiButton-containedPrimary,
+    .complaint-select-type-container .MuiButton-containedSecondary,
+    .complaint-select-type-container .MuiButton-outlined,
+    .complaint-select-type-container .MuiButton-outlinedPrimary,
+    .complaint-select-type-container .MuiButton-outlinedSecondary {
+        height: 36px !important;
+    }
+}

@@ -144,6 +144,33 @@
 }
 
 
+/* Mobile menu button */
+
+.mobile-menu-button {
+    display: none;
+    color: #333333 !important;
+}
+
+
+/* Mobile menu */
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu .MuiMenuItem-root {
+    color: #333333 !important;
+    font-size: 14px;
+    padding: 12px 24px;
+}
+
+.mobile-menu .MuiMenuItem-root.active {
+    color: #1565c0 !important;
+    font-weight: 600;
+    background-color: rgba(21, 101, 192, 0.08);
+}
+
+
 /* Support dropdown text */
 
 .support-dropdown .MuiButton-text {
@@ -234,4 +261,422 @@
 .MuiSwitch-checked,
 .MuiSwitch-checked+.MuiSwitch-track {
     display: none;
+}
+
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+    .logo-container {
+        padding: 12px 16px;
+    }
+    .cms-logo {
+        height: 40px;
+    }
+    .toolbar {
+        padding: 0 16px !important;
+    }
+    .mobile-menu-button {
+        display: block;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .auth-buttons {
+        gap: 8px;
+    }
+    .form-number {
+        padding: 4px 16px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-container {
+        padding: 8px 12px;
+    }
+    .cms-logo {
+        height: 32px;
+    }
+    .toolbar {
+        padding: 0 12px !important;
+        min-height: 40px !important;
+    }
+    .auth-buttons {
+        gap: 4px;
+    }
+    .theme-toggle-button {
+        padding: 4px !important;
+    }
+    .theme-toggle-button .MuiSvgIcon-root {
+        font-size: 20px !important;
+    }
+    .form-number {
+        padding: 2px 12px;
+        font-size: 9px;
+    }
+}
+
+
+/* Additional media queries for extra small devices */
+
+@media screen and (max-width: 360px) {
+    .logo-container {
+        padding: 6px 10px;
+    }
+    .cms-logo {
+        height: 28px;
+    }
+    .toolbar {
+        padding: 0 10px !important;
+        min-height: 36px !important;
+    }
+    .auth-buttons {
+        gap: 2px;
+    }
+    .theme-toggle-button {
+        padding: 2px !important;
+    }
+    .theme-toggle-button .MuiSvgIcon-root {
+        font-size: 18px !important;
+    }
+    .form-number {
+        padding: 2px 10px;
+        font-size: 8px;
+    }
+}
+
+
+/* Media query for landscape orientation on small devices */
+
+@media screen and (max-height: 480px) and (orientation: landscape) {
+    .logo-container {
+        padding: 6px 16px;
+    }
+    .cms-logo {
+        height: 30px;
+    }
+    .toolbar {
+        min-height: 36px !important;
+    }
+    .nav-link {
+        padding: 6px 12px;
+    }
+    .auth-link {
+        padding: 4px 10px;
+    }
+    .form-number {
+        padding: 2px 16px;
+    }
+}
+
+
+/* Additional responsive styles for header container */
+
+@media screen and (max-width: 1024px) {
+    .header-container {
+        overflow-x: hidden;
+    }
+    .logo-container {
+        flex-wrap: wrap;
+    }
+    .road-sign {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-container {
+        position: relative;
+    }
+    .logo-container {
+        justify-content: center;
+    }
+    .road-sign {
+        display: block !important;
+        height: 30px;
+        width: auto;
+        max-width: 40%;
+        object-fit: contain;
+    }
+    .nav-links {
+        display: none;
+    }
+    .mobile-menu-button {
+        display: flex;
+    }
+    .auth-buttons {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header-container {
+        min-height: auto;
+    }
+    .logo-container {
+        padding: 6px 8px;
+    }
+    .cms-logo {
+        height: 24px;
+    }
+    .toolbar {
+        padding: 0 8px !important;
+        min-height: 32px !important;
+    }
+    .auth-buttons {
+        gap: 2px;
+    }
+    .auth-link {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    .auth-icon {
+        font-size: 14px;
+    }
+    .theme-toggle-button {
+        padding: 2px !important;
+    }
+    .theme-toggle-button .MuiSvgIcon-root {
+        font-size: 16px !important;
+    }
+    .form-number {
+        padding: 2px 8px;
+        font-size: 8px;
+    }
+}
+
+
+/* Media query for very small height screens */
+
+@media screen and (max-height: 400px) {
+    .header-container {
+        min-height: auto;
+    }
+    .logo-container {
+        padding: 4px 16px;
+    }
+    .cms-logo {
+        height: 24px;
+    }
+    .toolbar {
+        min-height: 32px !important;
+    }
+    .nav-link {
+        padding: 4px 10px;
+    }
+    .auth-link {
+        padding: 2px 8px;
+    }
+    .form-number {
+        padding: 1px 16px;
+    }
+}
+
+
+/* Additional responsive fixes for header container */
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        overflow-x: hidden;
+    }
+    .logo-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 12px 16px;
+    }
+    .cms-logo {
+        height: 40px;
+        max-width: 60%;
+    }
+    .road-sign {
+        height: 40px;
+        max-width: 30%;
+    }
+    .toolbar {
+        flex-wrap: wrap;
+        padding: 0 16px !important;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .auth-buttons {
+        justify-content: flex-end;
+        width: auto;
+        margin-left: auto;
+    }
+    .theme-toggle-button {
+        padding: 6px !important;
+    }
+    .auth-link {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-container {
+        padding: 8px 12px;
+    }
+    .cms-logo {
+        height: 32px;
+        max-width: 50%;
+    }
+    .road-sign {
+        display: block !important;
+        height: 25px;
+        max-width: 35%;
+    }
+    .toolbar {
+        padding: 0 12px !important;
+        min-height: 40px !important;
+    }
+    .nav-links {
+        margin-bottom: 6px;
+    }
+    .nav-link {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+    .auth-buttons {
+        gap: 4px;
+    }
+    .theme-toggle-button {
+        padding: 4px !important;
+    }
+    .theme-toggle-button .MuiSvgIcon-root {
+        font-size: 20px !important;
+    }
+    .auth-link {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    .auth-icon {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .logo-container {
+        padding: 6px 10px;
+    }
+    .cms-logo {
+        height: 28px;
+        max-width: 45%;
+    }
+    .road-sign {
+        display: block !important;
+        height: 20px;
+        max-width: 30%;
+    }
+    .toolbar {
+        padding: 0 10px !important;
+        min-height: 36px !important;
+    }
+    .nav-links {
+        margin-bottom: 4px;
+    }
+    .nav-link {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    .auth-buttons {
+        gap: 2px;
+    }
+    .theme-toggle-button {
+        padding: 2px !important;
+    }
+    .theme-toggle-button .MuiSvgIcon-root {
+        font-size: 18px !important;
+    }
+    .auth-link {
+        padding: 3px 6px;
+        font-size: 11px;
+    }
+    .auth-icon {
+        font-size: 12px;
+    }
+}
+
+
+/* Fix for very small screens */
+
+@media screen and (max-width: 320px) {
+    .logo-container {
+        padding: 4px 8px;
+    }
+    .cms-logo {
+        height: 24px;
+        max-width: 40%;
+    }
+    .road-sign {
+        display: block !important;
+        height: 18px;
+        max-width: 25%;
+    }
+    .toolbar {
+        padding: 0 8px !important;
+        min-height: 32px !important;
+    }
+    .nav-links {
+        margin-bottom: 2px;
+    }
+    .nav-link {
+        padding: 3px 6px;
+        font-size: 11px;
+    }
+    .auth-buttons {
+        gap: 1px;
+    }
+    .theme-toggle-button {
+        padding: 1px !important;
+    }
+    .theme-toggle-button .MuiSvgIcon-root {
+        font-size: 16px !important;
+    }
+    .auth-link {
+        padding: 2px 4px;
+        font-size: 10px;
+    }
+    .auth-icon {
+        font-size: 10px;
+    }
+}
+
+
+/* Fix for landscape orientation on small devices */
+
+@media screen and (max-height: 480px) and (orientation: landscape) {
+    .header-container {
+        min-height: auto;
+    }
+    .logo-container {
+        padding: 6px 16px;
+    }
+    .cms-logo {
+        height: 30px;
+    }
+    .road-sign {
+        display: block !important;
+        height: 25px;
+        max-width: 30%;
+    }
+    .toolbar {
+        min-height: 36px !important;
+    }
+    .nav-links {
+        margin-bottom: 0;
+    }
+    .nav-link {
+        padding: 6px 12px;
+    }
+    .auth-link {
+        padding: 4px 10px;
+    }
+    .theme-toggle-button {
+        padding: 4px !important;
+    }
 }

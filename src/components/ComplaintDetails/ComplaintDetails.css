@@ -399,3 +399,318 @@ input[type="submit"]:hover,
     color: #333333 !important;
     background-color: #ffffff !important;
 }
+
+
+/* Responsive styles for small screens */
+
+@media screen and (max-width: 768px) {
+    .complaint-container {
+        padding: 10px;
+    }
+    .complaint-paper {
+        padding: 10px;
+    }
+    .complaint-title {
+        font-size: 20px;
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+    .anonymous-section {
+        padding: 12px;
+    }
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .radio-group label {
+        font-size: 14px;
+    }
+    .disclaimer {
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+    .disclaimer-text {
+        font-size: 13px;
+    }
+    .complaint-form {
+        padding: 12px;
+    }
+    .form-field {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        min-height: auto;
+    }
+    .form-field label {
+        flex: 0 0 auto;
+        margin-bottom: 8px;
+        font-size: 13px;
+    }
+    .input-container {
+        max-width: 100%;
+        width: 100%;
+    }
+    .input-container input,
+    .input-container select {
+        height: 36px;
+        font-size: 14px;
+    }
+    .phone-input {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .phone-input .extension {
+        width: 100%;
+    }
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px;
+    }
+    .button-container,
+    div[class*="button-container"],
+    div[class*="button-group"] {
+        flex-direction: column !important;
+        gap: 10px !important;
+        padding: 12px !important;
+    }
+    button,
+    .action-button,
+    .cancel-button,
+    .next-button,
+    .complaint-type-button,
+    .entity-info-button,
+    button[type="button"],
+    a.action-button,
+    input[type="submit"],
+    .MuiButton-root {
+        width: 100% !important;
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+        height: 40px !important;
+        min-width: 0 !important;
+    }
+    .form-section {
+        margin-bottom: 24px;
+    }
+    .form-buttons {
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .complaint-container {
+        padding: 8px;
+    }
+    .complaint-paper {
+        padding: 8px;
+    }
+    .complaint-title {
+        font-size: 18px;
+        padding: 10px;
+        margin-bottom: 12px;
+    }
+    .anonymous-section {
+        padding: 10px;
+    }
+    .radio-group-label {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .disclaimer {
+        padding: 10px;
+        margin-bottom: 16px;
+    }
+    .disclaimer-text {
+        font-size: 12px;
+    }
+    .complaint-form {
+        padding: 10px;
+    }
+    .form-field {
+        padding: 8px;
+    }
+    .form-field label {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+    .input-container input,
+    .input-container select {
+        height: 34px;
+        font-size: 13px;
+    }
+    .button-group {
+        padding: 10px;
+    }
+    .button-container,
+    div[class*="button-container"],
+    div[class*="button-group"] {
+        padding: 10px !important;
+    }
+    button,
+    .action-button,
+    .cancel-button,
+    .next-button,
+    .complaint-type-button,
+    .entity-info-button,
+    button[type="button"],
+    a.action-button,
+    input[type="submit"],
+    .MuiButton-root {
+        padding: 8px 16px !important;
+        font-size: 13px !important;
+        height: 36px !important;
+    }
+    .form-section {
+        margin-bottom: 20px;
+    }
+    .form-buttons {
+        margin-top: 20px;
+    }
+}
+
+
+/* Media query for extra small devices */
+
+@media screen and (max-width: 360px) {
+    .complaint-container {
+        padding: 6px;
+    }
+    .complaint-paper {
+        padding: 6px;
+    }
+    .complaint-title {
+        font-size: 16px;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+    .anonymous-section {
+        padding: 8px;
+    }
+    .radio-group-label {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    .disclaimer {
+        padding: 8px;
+        margin-bottom: 12px;
+    }
+    .disclaimer-text {
+        font-size: 11px;
+    }
+    .complaint-form {
+        padding: 8px;
+    }
+    .form-field {
+        padding: 6px;
+    }
+    .form-field label {
+        font-size: 11px;
+        margin-bottom: 4px;
+    }
+    .input-container input,
+    .input-container select {
+        height: 32px;
+        font-size: 12px;
+    }
+    .button-group {
+        padding: 8px;
+    }
+    .button-container,
+    div[class*="button-container"],
+    div[class*="button-group"] {
+        padding: 8px !important;
+    }
+    button,
+    .action-button,
+    .cancel-button,
+    .next-button,
+    .complaint-type-button,
+    .entity-info-button,
+    button[type="button"],
+    a.action-button,
+    input[type="submit"],
+    .MuiButton-root {
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+        height: 32px !important;
+    }
+    .form-section {
+        margin-bottom: 16px;
+    }
+    .form-buttons {
+        margin-top: 16px;
+    }
+}
+
+
+/* Media query for landscape orientation on small devices */
+
+@media screen and (max-height: 480px) and (orientation: landscape) {
+    .complaint-container {
+        padding: 8px;
+    }
+    .complaint-paper {
+        padding: 8px;
+    }
+    .complaint-title {
+        font-size: 18px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .anonymous-section {
+        padding: 10px;
+    }
+    .radio-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .disclaimer {
+        padding: 10px;
+        margin-bottom: 12px;
+    }
+    .complaint-form {
+        padding: 10px;
+    }
+    .form-field {
+        padding: 8px;
+    }
+    .form-field label {
+        font-size: 12px;
+    }
+    .input-container input,
+    .input-container select {
+        height: 34px;
+    }
+    .phone-input {
+        flex-direction: row;
+    }
+    .button-group {
+        padding: 10px;
+    }
+    .button-container,
+    div[class*="button-container"],
+    div[class*="button-group"] {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        padding: 10px !important;
+    }
+    button,
+    .action-button,
+    .cancel-button,
+    .next-button,
+    .complaint-type-button,
+    .entity-info-button,
+    button[type="button"],
+    a.action-button,
+    input[type="submit"],
+    .MuiButton-root {
+        height: 36px !important;
+    }
+    .form-section {
+        margin-bottom: 16px;
+    }
+    .form-buttons {
+        margin-top: 16px;
+    }
+}
