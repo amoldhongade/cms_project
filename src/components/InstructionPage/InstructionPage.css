@@ -53,17 +53,38 @@
 }
 
 .disclaimer-text {
+    margin: 0;
+    border-left: 4px solid #ff0000 !important;
+    padding-left: 16px;
     font-size: 14px;
     line-height: 1.5;
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ff0000 !important;
 }
 
 
-/* Keep disclaimer text red in dark mode */
+/* Force red color in dark mode */
 
 .app-container.dark-mode .disclaimer-text {
     color: #ff0000 !important;
+    border-left-color: #ff0000 !important;
+}
+
+
+/* Override any CMS Design System color classes */
+
+.disclaimer-text.ds-u-color--error {
+    color: #ff0000 !important;
+}
+
+
+/* Additional dark mode override to ensure red color */
+
+.app-container.dark-mode .disclaimer-text,
+.app-container.dark-mode .disclaimer-text.ds-u-color--error {
+    color: #ff0000 !important;
+    border-left-color: #ff0000 !important;
+    text-shadow: none !important;
 }
 
 .instruction-text {

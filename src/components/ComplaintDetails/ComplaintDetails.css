@@ -361,5 +361,41 @@ input[type="submit"]:hover,
 }
 
 .app-container.dark-mode .ds-c-choice__label {
-    color: #ffffff !important;
+    color: #1a1a1a!important;
+}
+
+
+/* Ensure dropdown fields remain visible in dark mode */
+
+.app-container.dark-mode .ds-c-field[value="--None--"],
+.app-container.dark-mode .ds-c-field option[value="--None--"] {
+    color: #333333 !important;
+    background-color: #ffffff !important;
+}
+
+
+/* Ensure dropdown fields remain visible in dark mode */
+
+.app-container.dark-mode select.ds-c-field,
+.app-container.dark-mode .ds-c-field[value="--None--"],
+.app-container.dark-mode .ds-c-field option[value="--None--"] {
+    color: #333333 !important;
+    background-color: #ffffff !important;
+}
+
+
+/* Ensure dropdown fields remain visible in dark mode */
+
+.app-container.dark-mode select.ds-c-field[name="organizationType"],
+.app-container.dark-mode select.ds-c-field[name="title"] {
+    color: #333333 !important;
+    background-color: #ffffff !important;
+}
+
+
+/* Ensure dropdown options remain visible in dark mode */
+
+.app-container.dark-mode select.ds-c-field option {
+    color: #333333 !important;
+    background-color: #ffffff !important;
 }
